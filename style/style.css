@@ -232,6 +232,21 @@ body {
   cursor: pointer;
 }
 
+.lydia-dp {
+  width: 50%; /* Takes up 50% of parent container instead of 80% */
+  max-width: 150px; /* Maximum size reduced from 300px to 150px */
+  margin: 0 auto;
+  border-radius: 50%; /* If applicable */
+}
+
+/* Media query for smaller screens like phones */
+@media (max-width: 768px) {
+  .lydia-dp {
+    width: 60%; /* Reduced from 90% */
+    max-width: 120px; /* Reduced from 200px */
+  }
+}
+
 /* Media Queries */
 @media screen and (max-height: 1000px) {
   .six .hat {
